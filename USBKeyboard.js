@@ -192,6 +192,7 @@ exports.tap = function(key, callback) {
 }
 
 exports.type = function(txt, callback) {
+  txt = txt.toUpperCase();
   var intr = setInterval(function() {
     if (!txt.length) {
       clearInterval(intr);
